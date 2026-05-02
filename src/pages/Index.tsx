@@ -5,6 +5,8 @@ import { Projects } from "@/components/site/Projects";
 import { About } from "@/components/site/About";
 import { Process } from "@/components/site/Process";
 import { Testimonial } from "@/components/site/Testimonial";
+import { Journal } from "@/components/site/Journal";
+import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { useEffect } from "react";
@@ -31,6 +33,8 @@ const Index = () => {
       <About />
       <Process />
       <Testimonial />
+      <Journal />
+      <FAQ />
       <Contact />
       <Footer />
     </main>
