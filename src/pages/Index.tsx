@@ -1,16 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { Marquee } from "@/components/site/Marquee";
+import { Projects } from "@/components/site/Projects";
+import { About } from "@/components/site/About";
+import { Process } from "@/components/site/Process";
+import { Testimonial } from "@/components/site/Testimonial";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { useEffect } from "react";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useEffect(() => {
+    document.title = "Maren & Studio — Organic Interior Design for Homes & Hospitality";
+    const desc = "Award-winning interior design studio crafting warm, organic spaces for residences, hotels, cafés and boutiques across Europe.";
+    let m = document.querySelector('meta[name="description"]');
+    if (!m) {
+      m = document.createElement("meta");
+      m.setAttribute("name", "description");
+      document.head.appendChild(m);
+    }
+    m.setAttribute("content", desc);
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen bg-background overflow-x-hidden">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <Projects />
+      <About />
+      <Process />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
