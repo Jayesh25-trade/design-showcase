@@ -13,9 +13,11 @@ export const Footer = () => {
         <div>
           <div className="text-xs uppercase tracking-widest text-bone/50 mb-4">Studio</div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#work" className="hover:text-bone">Work</a></li>
-            <li><a href="#about" className="hover:text-bone">About</a></li>
-            <li><a href="#contact" className="hover:text-bone">Contact</a></li>
+            <li><a href="/work" className="hover:text-bone">Work</a></li>
+            <li><a href="/studio" className="hover:text-bone">Studio</a></li>
+            <li><a href="/services" className="hover:text-bone">Services</a></li>
+            <li><a href="/journal" className="hover:text-bone">Journal</a></li>
+            <li><a href="/#contact" className="hover:text-bone">Contact</a></li>
           </ul>
         </div>
         <div>
@@ -23,7 +25,7 @@ export const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:text-bone">Instagram</a></li>
             <li><a href="#" className="hover:text-bone">Pinterest</a></li>
-            <li><a href="#" className="hover:text-bone">Journal</a></li>
+            <li><a href="mailto:hello@marenstudio.com" className="hover:text-bone">hello@marenstudio.com</a></li>
           </ul>
         </div>
       </div>
