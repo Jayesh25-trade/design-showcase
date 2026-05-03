@@ -17,7 +17,7 @@ export const Journal = () => {
               Field notes from the <span className="italic font-light text-clay">studio</span>.
             </h2>
           </div>
-          <a href="#" className="text-sm underline underline-offset-8 decoration-clay/60 hover:decoration-clay">
+          <a href="/journal" className="text-sm underline underline-offset-8 decoration-clay/60 hover:decoration-clay">
             Read the journal →
           </a>
         </div>
